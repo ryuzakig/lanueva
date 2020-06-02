@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Nueva Online</title>
+  <link rel="stylesheet" href="bulma.min.css" />
+  <style>
+    .column {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          La Nueva Online
+        </h1>
+        <h2 class="subtitle">
+          Directorio de restaurantes, clinicas, negocios y más ...
+        </h2>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- contenedor -->
+  <div class="container">
+    <button class="button is-primary" type="button" data-filter=".comida">Comida</button>
+    <button class="button is-primary" type="button" data-filter=".frutas">Frutas</button>
+    <button class="button is-primary" type="button" data-filter=".verdura">Verduras</button>
+    <button class="button is-primary" type="button" data-filter=".pupuseria">Pupuseria</button>
+    <button class="button is-primary" type="button" data-filter=".postres">Postres</button>
+    <button class="button is-primary" type="button" data-filter=".antojitos">Antojitos</button>
+    <button class="button is-primary" type="button" data-filter=".variedades">Variedades</button>
+    <button class="button is-primary" type="button" data-filter=".salud">Salud</button>
+    <button class="button is-primary" type="button" data-filter=".cosmetologia">Cosmetologia</button>
+    <br>
+    <br>
+    <div id="negocios">
+      <ul>
+        <div class="columns is-multiline">
+
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="mixitup.min.js"></script>
+  <script src="docready.js"></script>
+  <script>
+    const columnas = document.querySelector('.columns');
+
+    const request = new XMLHttpRequest();
+    request.open('GET', 'data.json', true);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function () {
+      const data = request.response;
+      const directorio = data["DIRECTORIO"];
+
+      for (var i = 0; i < directorio.length; i++) {
+        const negocio = document.createElement('li');
+        negocio.classList.add('column', 'is-one-third', 'mix', directorio[i]["CATEGORIA"]);
+        negocio.innerHTML = '<div class="card"> <div class="card-content"><p class="title">' + directorio[i][
+            "NOMBRE"
+          ] + '</p> <p class="subtitle">' +
+          directorio[i]["PRODUCTOS"] +
+          '</p> </div><footer class="card-footer"><p class = "card-footer-item" ><span >Teléfono: <br/>' +
+          directorio[
+            i]["TELEFONO"] +
+          '</span> </p > <p class = "card-footer-item" ><span > Servicio: <br/> ' + directorio[i]["SERVICIO"] +
+          ' </span> </p > <p class = "card-footer-item" ><span > Facebook: <br/><a href = "#" > Visitar </a> </span ></p> </footer > </div>';
+        columnas.appendChild(negocio);
+
+
+
+      }
+
+    }
+
+
+    docReady(function () {
+      var mixer = mixitup('.container');
+    });
+  </script>
+
+
+
+</body>
+
+</html>

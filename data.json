@@ -1,0 +1,362 @@
+﻿{
+  "DIRECTORIO": [{
+      "NOMBRE": "Restaurante Sabor Latino",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Tacos, tortas, burritos, etc.",
+      "HORARIO": "11:00 AM hasta 7:00 PM",
+      "TELEFONO": "2306-7015",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Eduardo Nuñez",
+      "CATEGORIA": "frutas",
+      "PRODUCTOS": "frutas y verduras",
+      "HORARIO": "6:00 AM hasta 7:00 PM",
+      "TELEFONO": "6142-9576",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Estela Portillo",
+      "CATEGORIA": "verdura",
+      "PRODUCTOS": "Venta de verduras",
+      "HORARIO": "Por la mañana",
+      "TELEFONO": "6027-1759",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Tortilleria y pupuseria Doña Santos Gorgonia",
+      "CATEGORIA": "pupuseria",
+      "PRODUCTOS": "Tortillas y Pupusas",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7745-8718",
+      "SERVICIO": "Para llevar"
+    },
+    {
+      "NOMBRE": "Rinconcito Mexicano",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Sopa de tortilla, boquitas mexicanas, burritos, etc.",
+      "HORARIO": "11:00 AM a 7:00 PM ",
+      "TELEFONO": "7595-3055",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Karen Duarte",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Carne envinagrada",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7560-4703",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "pupuseria Gloria y Gloria",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Pupusas",
+      "HORARIO": "4:30 PM a 8:00 PM",
+      "TELEFONO": "2306-7873",
+      "SERVICIO": "Para llevar"
+    },
+    {
+      "NOMBRE": "La Casona de Los Primos",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Pupusas, quesadillas, etc.",
+      "TELEFONO": "2335-7024",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Joel Miranda",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Venta de tilapia por encargo",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7569-5623",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "River's House",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Hamburguesas",
+      "HORARIO": "12:00 AM a 8:00 PM",
+      "TELEFONO": "7089-9180",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Lacteos La Nueva Niña Blanca",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Crema pura, quesillo",
+      "HORARIO": "6:00 AM a 7:00 PM",
+      "TELEFONO": "7273-8939",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Lácteos Tejada",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Crema pura, cuajada, duro blando, etc.",
+      "HORARIO": "7:00 AM a 6:30 PM",
+      "TELEFONO": "7859-7963",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Venta de Pollo Duarte",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Pollo entero, pechuga, menudos, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7224-0571",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "pupuseria Darickson",
+      "CATEGORIA": "pupuseria",
+      "PRODUCTOS": "Pupusas",
+      "HORARIO": "4:00 PM a 8:30 PM",
+      "TELEFONO": "7940-0770",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Señor Pollo",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Pollo frito, hamburguesas, etc.",
+      "HORARIO": "7:30 AM a 5:00 PM",
+      "TELEFONO": "7254-8333",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Gudalupe Pineda",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Venta de Camarones",
+      "HORARIO": "Por encargo",
+      "TELEFONO": "7472-2006",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Lácteos Chalatecos",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Queso duro, quesillo, crema pura, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "6028-5184",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Fogatta, Bristo & Grill",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Hamburguesas, Alitas, etc.",
+      "HORARIO": "5:00 PM a 9:00 PM",
+      "TELEFONO": "6307-7018",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Cherito's Pizza",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Pizza",
+      "HORARIO": "9:30 AM a 8:00 PM",
+      "TELEFONO": "2306-8922",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Chuz Rosales y Virginia Rosales",
+      "CATEGORIA": "postres",
+      "PRODUCTOS": "Budin, tartaletas, tres leches, etc.",
+      "HORARIO": "Por encargo",
+      "TELEFONO": "7884-2274",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Beatriz de Arita",
+      "CATEGORIA": "postres",
+      "PRODUCTOS": "Crepas Dulces y Saladas",
+      "HORARIO": "2:00 PM a 5:00 PM",
+      "TELEFONO": "7577-2286",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "antojitos Darickson",
+      "CATEGORIA": "antojitos",
+      "PRODUCTOS": "Yuca, pasteles, empanadas, etc.",
+      "HORARIO": "11:00 AM a 4:00 PM",
+      "TELEFONO": "7940-0770",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Beily Calderón",
+      "CATEGORIA": "postres",
+      "PRODUCTOS": "Tartaletas con fruta",
+      "HORARIO": "Por encargo",
+      "TELEFONO": "7956-5134",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "La Barrita",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Licuados, jugos, Hamburguesas, Sandwich, etc.",
+      "HORARIO": "9:00 AM a 4:00 PM",
+      "TELEFONO": "7059-4463",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "La Neveria",
+      "CATEGORIA": "postres",
+      "PRODUCTOS": "Pasteles Helados, Sorbete en galones, etc.",
+      "HORARIO": "9:00 AM a 5:00 PM",
+      "TELEFONO": "7592-1585",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Alejandra Aquino",
+      "CATEGORIA": "antojitos",
+      "PRODUCTOS": "Yuca frita, pasteles, churros españoles",
+      "HORARIO": "Entre semana",
+      "TELEFONO": "7032-3724",
+      "SERVICIO": "A domicilio y para llevar"
+    },
+    {
+      "NOMBRE": "Meybely Valle",
+      "CATEGORIA": "comida",
+      "PRODUCTOS": "Mantequilla de Mani Natural",
+      "HORARIO": "Por encargo",
+      "TELEFONO": "7554-5003",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Variedades Cardoza",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Todo tipo de desechables, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7893-6517",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Confecciones Katya",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Mascarillas de doble tela, arreglo de ropa, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7016-4542",
+      "SERVICIO": "En local y a domicilio"
+    },
+    {
+      "NOMBRE": "Keyri Floristeria",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Arreglos florales",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7271-1900",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Ferreteria Dorks",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Materiales electricos, fontaneria, etc.",
+      "HORARIO": "8:00 AM a 4:00 PM",
+      "TELEFONO": "7618-6744",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Ciber y Librería Isaac Ermi Sola",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Accesorios para telefonos, papeleria, impresiones, etc.",
+      "HORARIO": "7:00 AM a 8:00 PM",
+      "TELEFONO": "7247-5673",
+      "SERVICIO": "En local y a domicilio"
+    },
+    {
+      "NOMBRE": "Briseyda Decoraciones & Eventos",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Arreglos florales",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "6068-9032",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Adonay's Digital Center",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Accesorios para celulares.",
+      "HORARIO": "8:00 AM a 4:00 PM",
+      "TELEFONO": "7086-8404",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Bombacell",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Accesorios para celulares.",
+      "HORARIO": "8:00 AM a 2:00 PM",
+      "TELEFONO": "7280-2276",
+      "SERVICIO": "En local y a domicilio"
+    },
+    {
+      "NOMBRE": "Movil.land",
+      "CATEGORIA": "variedades",
+      "PRODUCTOS": "Accesorios para celulares.",
+      "HORARIO": "9:00 AM a 5:00 PM",
+      "TELEFONO": "7507-7182",
+      "SERVICIO": "En local y a domicilio"
+    },
+    {
+      "NOMBRE": "Meybely Valle",
+      "CATEGORIA": "salud",
+      "PRODUCTOS": "Consulta nutricional en linea",
+      "HORARIO": "9:00 AM a 3:00 PM",
+      "TELEFONO": "7554-5003",
+      "SERVICIO": "En linea"
+    },
+    {
+      "NOMBRE": "Laboratorio Clinico Integrado",
+      "CATEGORIA": "salud",
+      "PRODUCTOS": "Todo tipo de examenes medicos",
+      "HORARIO": "6:30 AM a 12:00 MD",
+      "TELEFONO": "2306-8117",
+      "SERVICIO": "En local"
+    },
+    {
+      "NOMBRE": "Clinica Dental Santamaria",
+      "CATEGORIA": "salud",
+      "PRODUCTOS": "Servicios dentales (Solo emergencias)",
+      "HORARIO": "8:00 AM a 12:00 MD",
+      "TELEFONO": "2306-7365",
+      "SERVICIO": "En consultorio"
+    },
+    {
+      "NOMBRE": "Clinica de Dr. Oscar Humberto Castaneda",
+      "CATEGORIA": "salud",
+      "PRODUCTOS": "Consultas con cita previa",
+      "HORARIO": "3:00 PM a 5:30 PM",
+      "TELEFONO": "2306-8117",
+      "SERVICIO": "En consultorio"
+    },
+    {
+      "NOMBRE": "Pediatra Dr. Eduardo Morales",
+      "CATEGORIA": "salud",
+      "PRODUCTOS": "Consultas con cita previa",
+      "HORARIO": "Por cita",
+      "TELEFONO": "2306-8117",
+      "SERVICIO": "En consultorio"
+    },
+    {
+      "NOMBRE": "Cynthia Gómez",
+      "CATEGORIA": "cosmetologia",
+      "PRODUCTOS": "Productos Marykay de maquillaje, etc.",
+      "HORARIO": "7:00 AM a 8:00 PM",
+      "TELEFONO": "7799-2221",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "KATLES",
+      "CATEGORIA": "cosmetologia",
+      "PRODUCTOS": "Productos de belleza, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7857-7952",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Karen Salón",
+      "CATEGORIA": "cosmetologia",
+      "PRODUCTOS": "Productos para el cuido del cabello, etc.",
+      "HORARIO": "Horario abierto",
+      "TELEFONO": "7560-4703",
+      "SERVICIO": "A domicilio"
+    },
+    {
+      "NOMBRE": "Adhara Salón",
+      "CATEGORIA": "cosmetologia",
+      "PRODUCTOS": "Productos para el cuido del cabello, etc.",
+      "HORARIO": "9:00 AM a 5:00 PM",
+      "TELEFONO": "7267-9939",
+      "SERVICIO": "En local"
+    }
+  ]
+}
