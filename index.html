@@ -50,9 +50,9 @@
     <button class="button is-primary" type="button" data-filter=".cosmetologia">Cosmetologia</button>
     <br>
     <br>
-    <div id="negocios">
+    <div class="">
       <ul>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline" data-ref="container">
 
         </div>
       </ul>
@@ -85,10 +85,10 @@
 
       for (var i = 0; i < directorio.length; i++) {
         const negocio = document.createElement('li');
-        negocio.classList.add('column', 'is-one-third', 'mix', directorio[i][
-          "CATEGORIA"
-        ]);
-        negocio.innerHTML = '<div class="card"><div class="card-content"><p class="title">' + directorio[i][
+        negocio.classList.add('column', 'is-one-third');
+        negocio.innerHTML = '<div class="card mix ' + directorio[i][
+            "CATEGORIA"
+          ] + '"><div class="card-content"><p class="title">' + directorio[i][
             "NOMBRE"
           ] + '</p><p class="subtitle">' +
           directorio[i]["PRODUCTOS"] +
@@ -102,7 +102,29 @@
 
     }
     docReady(function () {
-      var mixer = mixitup('.contenedor');
+      // var mixer = mixitup('.contenedor');
+      var container = document.querySelector('[data-ref="container"]');
+      var config = {
+        layout: {
+          allowNestedTargets: true
+        }
+      };
+
+      var mixer = mixitup(container, config);
+
+      // var container = document.querySelector(".columns");
+      // console.log(container);
+      // var collection = Array.from(container.querySelectorAll('.mix'));
+
+      // console.log(collection.length); // 34
+
+      // console.log(mixer);
+      // var mixer = mixitup('.contenedor', {
+      //   controls: {
+      //     toggleLogic: 'and'
+      //   }
+      // });
+
     });
   </script>
 
