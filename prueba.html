@@ -1,0 +1,251 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Nueva Online</title>
+  <link rel="stylesheet" href="bulma.min.css">
+  <style>
+    .column {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* @media screen and (max-width: 815px) {
+      li.column {
+        flex: none;
+        width: 50%;
+      }
+    } */
+  </style>
+
+</head>
+
+<body>
+  <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          La Nueva Online
+        </h1>
+        <h2 class="subtitle">
+          Directorio de restaurantes, clinicas, negocios y más ...
+        </h2>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- contenedor -->
+  <div class="container contenedor" data-ref="container">
+    <button class="button is-primary" type="button" data-filter=".comida">Comida</button>
+    <button class="button is-primary" type="button" data-filter=".frutas">Frutas</button>
+    <button class="button is-primary" type="button" data-filter=".verdura">Verduras</button>
+    <button class="button is-primary mixitup-control-active" type="button" data-filter=".pupuseria">Pupuseria</button>
+    <button class="button is-primary" type="button" data-filter=".postres">Postres</button>
+    <button class="button is-primary" type="button" data-filter=".antojitos">Antojitos</button>
+    <button class="button is-primary" type="button" data-filter=".variedades">Variedades</button>
+    <button class="button is-primary" type="button" data-filter=".salud">Salud</button>
+    <button class="button is-primary" type="button" data-filter=".cosmetologia">Cosmetologia</button>
+    <br>
+    <br>
+    <div class="">
+      <ul>
+        <div class="columns is-multiline">
+
+          <li class="column is-one-third mix comida">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Restaurante Sabor Latino</p>
+                <p class="subtitle">Tacos, tortas, burritos, etc.</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50323067015">2306-7015</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>A domicilio y para llevar</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+          <li class="column is-one-third mix frutas">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Eduardo Nuñez</p>
+                <p class="subtitle">frutas y verduras</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50361429576">6142-9576</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>A domicilio</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+          <li class="column is-one-third mix verdura">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Estela Portillo</p>
+                <p class="subtitle">Venta de verduras</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50360271759">6027-1759</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>A domicilio</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+          <li class="column is-one-third mix pupuseria">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Tortilleria y pupuseria Doña Santos Gorgonia</p>
+                <p class="subtitle">Tortillas y Pupusas</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50377458718">7745-8718</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>Para llevar</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+          <li class="column is-one-third  mix comida">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Rinconcito Mexicano</p>
+                <p class="subtitle">Sopa de tortilla, boquitas mexicanas, burritos, etc.</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50375953055">7595-3055</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>A domicilio y para llevar</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+          <li class="column is-one-third  mix comida">
+            <div class="card">
+              <div class="card-content">
+                <p class="title">Karen Duarte</p>
+                <p class="subtitle">Carne envinagrada</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item"><span>Teléfono: <br><a href="tel:+50375604703">7560-4703</a></span></p>
+                <p class="card-footer-item"><span>Servicio: <br>A domicilio</span></p>
+                <p class="card-footer-item"><span>Facebook:<br><a href="#">Visitar</a></span></p>
+              </footer>
+            </div>
+          </li>
+
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>La Nueva Online</strong>. Directorio de restaurantes, clinicas, negocios y más ...
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="mixitup.min.js"></script>
+  <script src="docready.js"></script>
+  <script>
+    // const columnas = document.querySelector('.columns');
+
+    // const request = new XMLHttpRequest();
+    // request.open('GET', 'data.json', true);
+    // request.responseType = 'json';
+    // request.send();
+
+    // request.onload = function () {
+    //   const data = request.response;
+    //   const directorio = data["DIRECTORIO"];
+
+    //   for (var i = 0; i < directorio.length; i++) {
+    //     const negocio = document.createElement('li');
+    //     negocio.classList.add('column', 'is-one-third');
+    //     negocio.innerHTML = '<div class="card mix ' + directorio[i][
+    //         "CATEGORIA"
+    //       ] + '"><div class="card-content"><p class="title">' + directorio[i][
+    //         "NOMBRE"
+    //       ] + '</p><p class="subtitle">' +
+    //       directorio[i]["PRODUCTOS"] +
+    //       '</p></div><footer class="card-footer"><p class="card-footer-item"><span>Teléfono: <br/><a href="tel:+503' +
+    //       directorio[i]["TELEFONO"].replace("-", "") + '">' +
+    //       directorio[i]["TELEFONO"] +
+    //       '</a></span></p><p class="card-footer-item"><span>Servicio: <br/>' + directorio[i]["SERVICIO"] +
+    //       '</span></p><p class="card-footer-item"><span>Facebook:<br/><a href="#">Visitar</a></span></p></footer></div>';
+    //     columnas.appendChild(negocio);
+    //   }
+
+    // }
+    docReady(function () {
+      // var mixer = mixitup('.contenedor');
+      var container = document.querySelector('[data-ref="container"]');
+      var config = {
+        layout: {
+          allowNestedTargets: true
+        }
+      };
+
+      var mixer = mixitup(container, config);
+
+      // var container = document.querySelector(".columns");
+      // console.log(container);
+      // var collection = Array.from(container.querySelectorAll('.mix'));
+
+      // console.log(collection.length); // 34
+
+      // console.log(mixer);
+      // var mixer = mixitup('.contenedor', {
+      //   controls: {
+      //     toggleLogic: 'and'
+      //   }
+      // });
+
+    });
+  </script>
+
+
+
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    } else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+
+</body>
+
+</html>
