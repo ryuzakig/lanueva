@@ -16,12 +16,15 @@
       }
       .card {
         font-weight: bold;
+        box-shadow: none;
       }
       .card .card-content {
         background-color: rgba(50, 152, 220, 0.2);
       }
       .card .card-footer {
         background-color: rgba(0, 209, 178, 0.2);
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+          0 0 0 1px rgba(10, 10, 10, 0.02);
       }
       @media screen and (min-width: 769px) {
         .column.is-one-third {
@@ -64,6 +67,9 @@
       </button>
       <button class="button is-primary" type="button" data-filter=".frutas">
         Frutas
+      </button>
+      <button class="button is-primary" type="button" data-filter=".ferreteria">
+        Ferreterias
       </button>
       <button class="button is-primary" type="button" data-filter=".verdura">
         Verduras
@@ -166,12 +172,12 @@
         var mixer = mixitup(container, config);
       }
 
-      cargar();
-
       function cargar() {
         crearLista();
         setTimeout(ordenar, 50);
       }
+
+      cargar();
     </script>
   </body>
 </html>
