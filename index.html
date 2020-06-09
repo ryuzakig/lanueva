@@ -3,55 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Nueva Online</title>
-    <link rel="stylesheet" href="bulma.min.css" />
-    <style>
-      .column {
-        display: flex;
-        justify-content: center;
-      }
+    <meta property="og:title" content="Mi Pueblo Online" />
+    <meta
+      property="og:description"
+      content="Directorio de negocios en Nueva Concepción"
+    />
+    <meta property="og:image" content="img/logo.jpg" />
 
-      .button {
-        margin-bottom: 10px;
-      }
-      .card {
-        font-weight: bold;
-        box-shadow: none;
-      }
-      .card .card-content {
-        background-color: rgba(50, 152, 220, 0.2);
-      }
-      .card .card-footer {
-        background-color: rgba(0, 209, 178, 0.2);
-        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
-          0 0 0 1px rgba(10, 10, 10, 0.02);
-      }
-      @media screen and (min-width: 769px) {
-        .column.is-one-third {
-          flex: none;
-          width: 50%;
-        }
-      }
-
-      @media screen and (min-width: 1087px) {
-        .column.is-one-third {
-          flex: none;
-          width: 33.333%;
-        }
-      }
-    </style>
+    <title>Mi Pueblo Online</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <section class="hero is-primary">
+    <section class="hero brand-color">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            La Nueva Online
-          </h1>
-          <h2 class="subtitle">
-            Directorio de restaurantes, clinicas, negocios y más ...
-          </h2>
+        <div class="container logo">
+          <img src="img/logo.jpg" alt="Logo" />
         </div>
       </div>
     </section>
@@ -59,38 +27,46 @@
 
     <!-- contenedor -->
     <div class="container contenedor has-text-centered" data-ref="container">
-      <button class="button is-primary" type="button" data-filter="all">
+      <button class="button brand-color" type="button" data-filter="all">
         Todos
       </button>
-      <button class="button is-primary" type="button" data-filter=".comida">
+      <button class="button brand-color" type="button" data-filter=".comida">
         Comida
       </button>
-      <button class="button is-primary" type="button" data-filter=".frutas">
+      <button class="button brand-color" type="button" data-filter=".frutas">
         Frutas
       </button>
-      <button class="button is-primary" type="button" data-filter=".ferreteria">
+      <button
+        class="button brand-color"
+        type="button"
+        data-filter=".ferreteria"
+      >
         Ferreterias
       </button>
-      <button class="button is-primary" type="button" data-filter=".verdura">
+      <button class="button brand-color" type="button" data-filter=".verdura">
         Verduras
       </button>
-      <button class="button is-primary" type="button" data-filter=".pupuseria">
+      <button class="button brand-color" type="button" data-filter=".pupuseria">
         Pupuseria
       </button>
-      <button class="button is-primary" type="button" data-filter=".postres">
+      <button class="button brand-color" type="button" data-filter=".postres">
         Postres
       </button>
-      <button class="button is-primary" type="button" data-filter=".antojitos">
+      <button class="button brand-color" type="button" data-filter=".antojitos">
         Antojitos
       </button>
-      <button class="button is-primary" type="button" data-filter=".variedades">
+      <button
+        class="button brand-color"
+        type="button"
+        data-filter=".variedades"
+      >
         Variedades
       </button>
-      <button class="button is-primary" type="button" data-filter=".salud">
+      <button class="button brand-color" type="button" data-filter=".salud">
         Salud
       </button>
       <button
-        class="button is-primary"
+        class="button brand-color"
         type="button"
         data-filter=".cosmetologia"
       >
@@ -100,7 +76,7 @@
       <br />
       <div class="">
         <ul>
-          <div class="columns is-multiline is-centered"></div>
+          <div class="columns is-multiline is-centered listado"></div>
         </ul>
       </div>
     </div>
@@ -108,7 +84,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>La Nueva Online</strong>. Directorio de restaurantes,
+          <strong>Mi Pueblo Online</strong>. Directorio de restaurantes,
           clinicas, negocios y más ...
         </p>
         <p>
@@ -120,13 +96,13 @@
       </div>
     </footer>
 
-    <script src="mixitup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script>
       function crearLista() {
-        const columnas = document.querySelector(".columns");
+        const columnas = document.querySelector(".listado");
 
         const request = new XMLHttpRequest();
-        request.open("GET", "directorio.json", true);
+        request.open("GET", "js/directorio.json", true);
         request.responseType = "json";
         request.send();
 
