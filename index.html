@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Mi Pueblo Online" />
-    <meta
-      property="og:description"
-      content="Directorio de negocios en Nueva Concepción"
-    />
-    <meta property="og:url" content="https://lanueva.xyz/" />
-    <meta
-      property="og:image"
-      content="https://ryuzakig.github.io/lanueva/img/logo.jpg"
-    />
-    <title>Mi Pueblo Online</title>
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <section class="hero brand-color">
-      <div class="hero-body">
-        <div class="container logo">
-          <img src="img/logo.jpg" alt="Logo" />
-        </div>
-      </div>
-    </section>
-    <br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Mi Pueblo Online" />
+  <meta property="og:description" content="Directorio de negocios en Nueva Concepción" />
+  <meta property="og:url" content="https://lanueva.xyz/" />
+  <meta property="og:image" content="https://ryuzakig.github.io/lanueva/img/logo.jpg" />
+  <title>Mi Pueblo Online</title>
+  <link rel="stylesheet" href="css/bulma.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <!-- contenedor -->
-    <div class="container contenedor has-text-centered" data-ref="container">
-      <div class="botones"></div>
-      <br />
-      <br />
-      <div class="">
-        <ul>
-          <div class="columns is-multiline is-centered listado"></div>
-        </ul>
+<body>
+  <section class="hero brand-color">
+    <div class="hero-body">
+      <div class="container logo">
+        <img src="img/logo.jpg" alt="Logo" />
       </div>
     </div>
+  </section>
+  <br />
 
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Mi Pueblo Online</strong>. Directorio de restaurantes,
-          clinicas, negocios y más ...
-        </p>
-        <p>
-          Idea original de
-          <a href="https://www.facebook.com/profile.php?id=100007241807036"
-            >Katya Cardoza</a
-          >
-        </p>
-      </div>
-    </footer>
+  <!-- contenedor -->
+  <div class="container contenedor has-text-centered" data-ref="container">
+    <div class="botones"></div>
+    <br />
+    <br />
+    <div class="">
+      <ul>
+        <div class="columns is-multiline is-centered listado"></div>
+      </ul>
+    </div>
+  </div>
 
-    <script src="js/mixitup.min.js"></script>
-    <script>
-      function crearLista() {
-        const columnas = document.querySelector(".listado");
-        const botones = document.querySelector(".botones");
-        var listadoBotones = [];
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Mi Pueblo Online</strong>. Directorio de restaurantes,
+        clinicas, negocios y más ...
+      </p>
+      <p>
+        Idea original de
+        <a href="https://www.facebook.com/profile.php?id=100007241807036">Katya Cardoza</a>
+      </p>
+    </div>
+  </footer>
 
-        const request = new XMLHttpRequest();
-        request.open("GET", "js/directorio.json", true);
-        request.responseType = "json";
-        request.send();
+  <script src="js/mixitup.min.js"></script>
+  <script>
+    function crearLista() {
+      const columnas = document.querySelector(".listado");
+      const botones = document.querySelector(".botones");
+      var listadoBotones = [];
 
-        request.onload = function () {
-          const data = request.response;
-          const directorio = data["DIRECTORIO"];
+      const request = new XMLHttpRequest();
+      request.open("GET", "js/directorio.json", true);
+      request.responseType = "json";
+      request.send();
 
-          for (var i = 0; i < directorio.length; i++) {
-            listadoBotones.push(directorio[i]["CATEGORIA"]);
-            const negocio = document.createElement("li");
-            negocio.classList.add(
-              "column",
-              "is-one-third",
-              "mix",
-              directorio[i]["CATEGORIA"]
-            );
-            negocio.innerHTML =
-              '<div class="card"><div class="card-content"><p class="title">' +
-              directorio[i]["NOMBRE"] +
-              '</p><p class="subtitle">' +
-              directorio[i]["PRODUCTOS"] +
-              '</p></div><footer class="card-footer"><p class="card-footer-item"><span>Teléfono: <br/><a href="tel:+503' +
-              directorio[i]["TELEFONO"].replace("-", "") +
-              '">' +
-              directorio[i]["TELEFONO"] +
-              '</a></span></p><p class="card-footer-item"><span>Servicio: <br/>' +
-              directorio[i]["SERVICIO"] +
-              '</span></p><p class="card-footer-item"><span>Horario:<br/>' +
-              directorio[i]["HORARIO"] +
-              "</span></p></footer></div>";
-            columnas.appendChild(negocio);
-          }
 
-          let outputArray = listadoBotones.filter(function (v, i, self) {
-            return i == self.indexOf(v);
-          });
+      request.onload = function () {
+        const data = request.response;
+        const directorio = data["DIRECTORIO"];
 
-          const botonAll = document.createElement("button");
-          botonAll.classList.add("button", "brand-color");
-          botonAll.type = "button";
-          botonAll.setAttribute("data-filter", "all");
-          botonAll.innerHTML = "Todos";
-          botones.appendChild(botonAll);
+        for (var i = 0; i < directorio.length; i++) {
+          listadoBotones.push(directorio[i]["CATEGORIA"]);
+          const negocio = document.createElement("li");
+          negocio.classList.add(
+            "column",
+            "is-one-third",
+            "mix",
+            directorio[i]["CATEGORIA"]
+          );
+          negocio.innerHTML =
+            '<div class="card"><div class="card-content"><p class="title">' +
+            directorio[i]["NOMBRE"] +
+            '</p><p class="subtitle">' +
+            directorio[i]["PRODUCTOS"] +
+            '</p></div><footer class="card-footer"><p class="card-footer-item"><span>Teléfono: <br/><a href="tel:+503' +
+            directorio[i]["TELEFONO"].replace("-", "") +
+            '">' +
+            directorio[i]["TELEFONO"] +
+            '</a></span></p><p class="card-footer-item"><span>Servicio: <br/>' +
+            directorio[i]["SERVICIO"] +
+            '</span></p><p class="card-footer-item"><span>Horario:<br/>' +
+            directorio[i]["HORARIO"] +
+            "</span></p></footer></div>";
+          columnas.appendChild(negocio);
+        }
 
-          outputArray.forEach(function (elemento, indice, array) {
-            const boton = document.createElement("button");
-            boton.classList.add("button", "brand-color");
-            boton.type = "button";
-            boton.setAttribute("data-filter", "." + elemento);
 
-            boton.innerHTML = elemento[0].toUpperCase() + elemento.slice(1);
-            botones.appendChild(boton);
-          });
-        };
-        setTimeout(ordenar, 50);
       }
 
-      function ordenar() {
-        var container = document.querySelector('[data-ref="container"]');
-        var config = {
-          layout: {
-            allowNestedTargets: true,
-          },
-        };
+      request.onloadend = function () {
+        let outputArray = listadoBotones.filter(function (v, i, self) {
+          return i == self.indexOf(v);
+        });
 
-        var mixer = mixitup(container, config);
+        const botonAll = document.createElement("button");
+        botonAll.classList.add("button", "brand-color");
+        botonAll.type = "button";
+        botonAll.setAttribute("data-filter", "all");
+        botonAll.innerHTML = "Todos";
+        botones.appendChild(botonAll);
+
+        outputArray.forEach(function (elemento, indice, array) {
+          const boton = document.createElement("button");
+          boton.classList.add("button", "brand-color");
+          boton.type = "button";
+          boton.setAttribute("data-filter", "." + elemento);
+
+          boton.innerHTML = elemento[0].toUpperCase() + elemento.slice(1);
+          botones.appendChild(boton);
+        });
+
+        ordenar();
       }
+      // setTimeout(ordenar, 50);
+    }
 
-      crearLista();
-    </script>
-  </body>
+    function ordenar() {
+      var container = document.querySelector('[data-ref="container"]');
+      var config = {
+        layout: {
+          allowNestedTargets: true,
+        },
+      };
+
+      var mixer = mixitup(container, config);
+    }
+
+    crearLista();
+  </script>
+</body>
+
 </html>
