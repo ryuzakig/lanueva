@@ -1,5 +1,12 @@
 ﻿{
-    "DIRECTORIO": [
+    "DIRECTORIO": [{
+            "NOMBRE": "Estefany Palencia",
+            "CATEGORIA": "comida",
+            "PRODUCTOS": "Panes con pollo a domicilio",
+            "HORARIO": "Los sábados",
+            "TELEFONO": "7029-2147",
+            "SERVICIO": "A domicilio"
+        },
         {
             "NOMBRE": "Restaurante Sabor Latino",
             "CATEGORIA": "comida",
